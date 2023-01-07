@@ -1,0 +1,18 @@
+{
+    "editor.formatOnSave": true,
+    "solidity.formatter": "prettier",
+    "[solidity]": {
+      "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "solidity.solhintRules": {
+      "extends": "solhint:recommended",
+      "rules": {
+        "compiler-version": ["error", "^0.8.0"],
+        "func-visibility": ["warn", { "ignoreConstructors": true }],
+        "reason-string": ["warn", { "maxLength": 99 }]
+      }
+    }
+  }
